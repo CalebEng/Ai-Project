@@ -3,17 +3,10 @@
 #Messing with creating a discord chat bot
 
 
-import csv
+temp = "hello there My name is"
 
-with open('Data set/conversation_enc.csv') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    line_count =0
-    for row in csv_reader:
-        if line_count ==0:
-            print(f"Column names are {', '.join(row)}")
-            line_count+=1
-
-
-
-
-
+count= len(temp.split())
+if count<20:
+    for i in range(count, 20):
+        temp+=" -"
+print(temp)
